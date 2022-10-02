@@ -4,8 +4,9 @@ from scripts.helper import (
     get_verify_status,
     LOCAL_BLOCKCHAIN_ENVIRONMENTS,
 )
+from web3 import Web3
 
-INITIAL_SUPPLY = 1000000000000000000000000
+INITIAL_SUPPLY = Web3.toWei(10000, "ether")
 
 
 def deploy():
